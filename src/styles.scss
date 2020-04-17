@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+.planet-image-container {
+  overflow: hidden;
+  width: 75px;
+  height: 74px;
+
+  .planet-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.status-ok {
+  color: green;
+}
+
+.status-not-ok {
+  color: red;
+}
+
+.status-to-do {
+  color: blue;
+}
+
+.status-en-route {
+  color: grey;
+}
+
+

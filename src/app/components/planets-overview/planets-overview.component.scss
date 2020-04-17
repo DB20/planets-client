@@ -1,0 +1,32 @@
+.planet-container {
+  display: flex;
+  border-bottom: solid 1px lightgray;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.planet-primary-data {
+  .planet-name {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.planet-status {
+  margin: auto;
+}
+
+.planet-data,
+.planet-not-visited {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.planet-not-visited {
+  align-items: center;
+  justify-content: center;
+}

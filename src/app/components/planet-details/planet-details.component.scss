@@ -1,0 +1,35 @@
+.planet-description-container,
+.planet-status-container {
+  display: flex;
+}
+
+.planet-primary-data {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .planet-name {
+    display: flex;
+    margin: auto;
+  }
+
+  .home-icon {
+    margin-left: auto;
+  }
+
+  .edit-icon,
+  .save-icon {
+    margin-left: 0.5rem;
+  }
+}
+
+.planet-data,
+.planet-data-edit {
+  div {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.description-form-control {
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+<div class="inner-container">
+  <app-header></app-header>
+  <div class="planets-list container">
+    <div
+      class="planet-container row"
+      *ngFor="let planet of planets"
+      (click)="goToPlanetDetails(planet)"
+    >
+      <div class="planet-primary-data col-sm-2">
+        <div class="planet-image-container">
+          <img
+            class="planet-image"
+            src="../../../assets/images/{{ planet.image }}"
+          />
+        </div>
+        <div class="planet-name">
+          {{ planet.name | uppercase }}
+        </div>
+      </div>
+      <div class="planet-data col-sm-2" *ngIf="checkPlanetVisited(planet.status)">
+        <div class="planet-description">{{ planet.description }}</div>
+        <div class="captain"><b>by captain:</b> {{ planet.captain }}</div>
+        <div class="robots"><b>Robots:</b> {{ planet.robots }}</div>
+      </div>
+      <div class="planet-not-visited" *ngIf="!checkPlanetVisited(planet.status)">
+        No description yet /
+      </div>
+      <div
+        class="planet-status col-sm-2"
+        [ngClass]="setStatusClass(planet.status)"
+      >
+        {{ planet.status }}
+      </div>
+    </div>
+  </div>
+</div>
